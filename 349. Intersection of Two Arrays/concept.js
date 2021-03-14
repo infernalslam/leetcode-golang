@@ -13,22 +13,10 @@
   console.log(n2, "=> ", nums2)
 
 
-  if (n1.length === 0) {
-    if (n2.length > 0) {
-      return []
-    } else {
-      return n2
-    }
-    
+  if (n1.length == 0 || n2.length == 0) {
+    return []
   }
 
-  if (n2.length === 0) {
-    if (n1.length > 0) {
-      return []
-    } else {
-      return n2
-    }
-  }
   
 
   const merge = [...n1, ...n2]
